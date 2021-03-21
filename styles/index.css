@@ -4,21 +4,29 @@ body {
 }
 
 @font-face {
-  font-family: "BigJohn";
-  src: url("/fonts/BigJohn.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "SlimJoe";
-  src: url("/fonts/SlimJoe.woff2") format("woff2");
+  font-family: "Retroking";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Retroking.woff") format("woff");
 }
 
 #mc_embed_signup .button {
   background-color: #c93a29;
+  font-size: 26px;
+  padding: 10px 15px 6px;
   color: white;
   outline: 0;
-  font-family: "BigJohn";
-  padding: 2px 18px 0;
+  font-family: "Retroking";
+  height: unset;
+}
+
+#mc_embed_signup input.email {
+  height: 48px;
+  font-size: 26px;
+}
+
+#mc_embed_signup input.email:focus {
+  outline-color: #f15a29;
 }
 
 #mc_embed_signup .button:hover {

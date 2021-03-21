@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.Signup}>
         <H3>Get the Prom Night Newsletter</H3>
         <BodySmall className={styles.Cta}>
-          Sign up to stay in the loop about all our rad events this summer 🤘
+          Sign up to stay in the loop on our rad events 🤘
         </BodySmall>
         <MailchimpSignup />
       </div>
