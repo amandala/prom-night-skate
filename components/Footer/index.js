@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <div className={styles.Wrapper}>
       <div className={styles.Signup}>
-        <H3>Get the Prom Night Newsletter</H3>
+        {/* <H3>Get the Prom Night Newsletter</H3>
         <BodySmall className={styles.Cta}>
           Sign up to stay in the loop on our rad events 🤘
-        </BodySmall>
+        </BodySmall> */}
         <MailchimpSignup />
       </div>
       <div className={styles.Links}>

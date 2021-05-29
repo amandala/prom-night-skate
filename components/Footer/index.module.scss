@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .Wrapper {
-  background-color: $gumbo-blue;
+  background-color: black;
   padding: 40px 24px 38px;
   display: flex;
   flex-direction: column;
@@ -17,13 +17,14 @@
 }
 
 .Link {
+  font-family: "Century Gothic";
   text-decoration: none;
   color: white;
   outline: 0;
   font-size: 12px;
   &:hover,
   &:focus {
-    color: $persian-red;
+    color: $turbo-yellow;
   }
   margin-top: 24px;
 }

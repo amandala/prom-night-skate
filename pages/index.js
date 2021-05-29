@@ -1,6 +1,6 @@
 import Head from "../components/Head";
-import { Body } from "../components/Typography";
 import Header from "../components/Header";
+import { H1, H2 } from "../components/Typography";
 import styles from "./index.module.scss";
 
 const Home = () => {
@@ -9,6 +9,10 @@ const Home = () => {
       <Header />
       <div className={styles.Main}>
         <Head title="Home" />
+        <div className={styles.UnderConst}>
+          <H1 className={styles.Heading}>🚧 SITE UNDER CONSTRUCTION 🚧</H1>
+          <H2>Check back soon for updates!</H2>
+        </div>
       </div>
     </div>
   );
