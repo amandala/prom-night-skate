@@ -17,6 +17,10 @@ const Head = (props) => (
     />
     <meta name="keywords" content={props.keywords || defaultKeywords} />
     <link
+      href="http://fonts.cdnfonts.com/css/century-gothic"
+      rel="stylesheet"
+    ></link>
+    <link
       href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
       rel="stylesheet"
       type="text/css"
