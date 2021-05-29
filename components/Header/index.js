@@ -1,20 +1,32 @@
 import React from "react";
 import cx from "classnames";
+import { H3 } from "../Typography";
 import Link from "next/link";
-import { H2 } from "../../components/Typography";
 import styles from "./index.module.scss";
 
 const Header = ({ pink }) => {
   return (
     <header className={cx(styles.Header, { [styles.HeaderBlack]: !pink })}>
       <div className={styles.HeaderContent}>
-        <Link href="/">
+        <div className={styles.FreeVansWrapper}>
           <img
-            className={styles.Logo}
-            src={pink ? "/BKMagLogo.PNG" : "/BKMagLogo_Pink.PNG"}
-            alt="Big Kitty Logo"
+            className={styles.FreeVans}
+            src="/freeVans.svg"
+            alt="Giving away a free pair of Vans"
           />
-        </Link>
+        </div>
+        <div className={styles.LogoWrapper}>
+          <Link href="/">
+            <img
+              className={styles.Logo}
+              src="/PromNightLogo.svg"
+              alt="Prom Night Skate Logo"
+            />
+          </Link>
+          <H3 className={styles.Time}>
+            6:30pm - 8:30pm @ Cochrane Skate Park{" "}
+          </H3>
+        </div>
       </div>
     </header>
   );
