@@ -23,9 +23,14 @@ const Header = ({ pink }) => {
               alt="Prom Night Skate Logo"
             />
           </Link>
-          <H3 className={styles.Time}>
-            6:30pm - 8:30pm @ Cochrane Skate Park{" "}
-          </H3>
+          <div className={styles.DateWrapper}>
+            <H3 className={styles.Date}>
+              Every Tuesday &bull; June - September
+            </H3>
+            <H3 className={styles.Time}>
+              6:30pm - 8:30pm @ Cochrane Skate Park{" "}
+            </H3>
+          </div>
         </div>
       </div>
     </header>
