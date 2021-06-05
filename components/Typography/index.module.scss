@@ -102,4 +102,15 @@
     font-size-adjust: 20px;
     line-height: 28px;
   }
+
+  .BodyExtraSmall {
+    font-size: 24px;
+  }
+}
+
+@include breakpoint(large) {
+  .H1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
 }

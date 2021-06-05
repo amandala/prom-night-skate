@@ -1,8 +1,7 @@
 import Head from "../components/Head";
 import Header from "../components/Header";
 import Gallery from "../components/Gallery";
-
-import { H1, H2 } from "../components/Typography";
+import { H1 } from "../components/Typography";
 import styles from "./index.module.scss";
 
 const Home = () => {
@@ -11,11 +10,10 @@ const Home = () => {
       <Header />
       <div className={styles.Main}>
         <Head title="Home" />
-        <Gallery />
-        <div className={styles.UnderConst}>
-          <H1 className={styles.Heading}>🚧 SITE UNDER CONSTRUCTION 🚧</H1>
-          <H2>Check back soon for updates!</H2>
+        <div className={styles.Tagline}>
+          <H1 className={styles.Tag}>Empowering girls through boardsports</H1>
         </div>
+        <Gallery />
       </div>
     </div>
   );
