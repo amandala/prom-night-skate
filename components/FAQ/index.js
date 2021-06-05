@@ -60,7 +60,7 @@ const FAQ = () => {
       </li>
       <li className={styles.Question}>
         <button className={styles.Heading} onClick={() => setOpenQ("register")}>
-          <Body className={styles.Heading}>How do I sign her up?</Body>
+          <Body className={styles.Heading}>How does she register?</Body>
         </button>
         <div
           className={cx(styles.Answer, {
