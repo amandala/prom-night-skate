@@ -2,7 +2,6 @@
 
 .Wrapper {
   list-style: none;
-  max-width: 800px;
   margin-bottom: 70px;
   padding: 0 24px;
 }
@@ -40,6 +39,7 @@
   display: none;
   transition: all 0.5s ease-in-out;
   text-align: center;
+  color: grey;
 
   &Open {
     display: block;
@@ -54,7 +54,7 @@
   }
 
   .Wrapper {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
   }
 }
