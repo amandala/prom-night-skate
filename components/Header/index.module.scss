@@ -1,0 +1,109 @@
+@import "../../styles/variables";
+
+.Header {
+  background-color: $turbo-yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+
+  &Content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.NavLink {
+  margin: 0;
+  padding: 0;
+  cursor: $skate-cursor;
+  color: black;
+  font-size: 16px;
+}
+
+.BottomBanner {
+  padding: 20px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.BannerText {
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.FreeVans {
+  max-width: 80px;
+  transform: rotate(40deg);
+  margin-bottom: -40px;
+
+  &Wrapper {
+    padding: 0 40px 0 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.Logo {
+  max-width: 900px;
+  margin-right: 0;
+  margin-bottom: 16px;
+  padding-right: 30px;
+
+  &Wrapper {
+    padding: 10px 0px 5px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:hover {
+    cursor: $skate-cursor;
+  }
+}
+
+.DateWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.Time {
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+
+.Date {
+  align-self: flex-end;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+@include breakpoint(medium) {
+  .Header {
+    padding: 40px 0;
+  }
+
+  .NavLink {
+    font-size: 22px;
+  }
+
+  .DateWrapper {
+    margin-right: 70px;
+  }
+
+  .FreeVans {
+    max-width: 150px;
+    margin-bottom: -80px;
+    &Wrapper {
+      padding: 0 60px 0 0;
+    }
+  }
+
+  .Logo {
+    margin-bottom: 50px;
+  }
+}

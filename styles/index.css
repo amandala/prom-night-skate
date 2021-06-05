@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Retroking";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Retroking.woff") format("woff");
+}
+
+#mc_embed_signup .button {
+  background-color: #c93a29;
+  font-size: 26px;
+  padding: 10px 15px 6px;
+  color: white;
+  outline: 0;
+  font-family: "Retroking";
+  height: unset;
+}
+
+#mc_embed_signup input.email {
+  height: 48px;
+  font-size: 26px;
+}
+
+#mc_embed_signup input.email:focus {
+  outline-color: #f15a29;
+}
+
+#mc_embed_signup .button:hover {
+  background-color: #c93a29;
+  opacity: 0.7;
+}
+
+#mc_embed_signup .button:focus {
+  box-shadow: 0 0 0 3px white;
+}
+
+#mc_embed_signup form {
+  text-align: unset;
+  padding-bottom: 2px;
+}

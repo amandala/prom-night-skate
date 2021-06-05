@@ -1,0 +1,21 @@
+@import "../styles/variables";
+
+.Main {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.UnderConst {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.Heading {
+  margin-bottom: 20px;
+}
+
+@include breakpoint(medium) {
+}

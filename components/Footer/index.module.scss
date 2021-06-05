@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+
+.Wrapper {
+  background-color: black;
+  padding: 40px 24px 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Cta {
+  color: white;
+  margin-top: -10px;
+}
+
+.Right {
+  margin-bottom: 40px;
+}
+
+.Link {
+  font-family: "Century Gothic";
+  text-decoration: none;
+  color: white;
+  outline: 0;
+  font-size: 12px;
+  &:hover,
+  &:focus {
+    color: $turbo-yellow;
+  }
+  margin-top: 24px;
+}
+
+.Advertise {
+  text-decoration: none;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    .Cta {
+      color: $persian-red;
+    }
+  }
+}
+
+.Links,
+.Signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Signup {
+  padding-bottom: 40px;
+  border-bottom: 1px solid white;
+}
+
+@include breakpoint(large) {
+  .Link {
+    margin-top: 20px;
+  }
+}

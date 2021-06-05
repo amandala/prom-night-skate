@@ -1,0 +1,27 @@
+$persian-red: #c93a29;
+$flaming-orange: #f15a29;
+$raffia-tan: #ede0bf;
+$turbo-yellow: #fff386;
+$gumbo-blue: #82a6a9;
+
+$breakpoints: (
+  base: 0,
+  small: 540px,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1410px,
+);
+
+@mixin breakpoint($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+$retroking: "Retroking", Helvetica, Roboto;
+
+$skate-cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='20' height='24' viewport='0 0 100 100' style='fill:black;font-size:12px;'><text y='50%'>🛹</text></svg>")
+    16 0,
+  auto; /*!emojicursor.app*/
