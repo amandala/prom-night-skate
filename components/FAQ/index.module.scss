@@ -1,8 +1,10 @@
+@import "../../styles/variables";
+
 .Wrapper {
   list-style: none;
   max-width: 800px;
-  margin: 0 auto;
   margin-bottom: 70px;
+  padding: 0 24px;
 }
 
 .Heading {
@@ -25,7 +27,7 @@
 }
 
 .Question {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   &:hover {
     cursor: pointer;
@@ -37,10 +39,22 @@
   opacity: 0;
   display: none;
   transition: all 0.5s ease-in-out;
+  text-align: center;
 
   &Open {
     display: block;
     height: auto;
     opacity: 1;
+  }
+}
+
+@include breakpoint(medium) {
+  .Answer {
+    text-align: left;
+  }
+
+  .Wrapper {
+    max-width: 900px;
+    margin: 0 auto;
   }
 }
