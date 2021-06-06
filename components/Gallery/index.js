@@ -10,7 +10,7 @@ const Gallery = () => {
           <H1 className={styles.Heading}>Everyone has to start somewhere</H1>
           <Body className={styles.About}>
             We’re can help get you on your board for the first time, drop in, or
-            just learn some fundamentals. We’re here to help girls advance their
+            just learn some fundamentals. We want to help girls advance their
             skills safely by setting up a fun and supportive envirornment.
           </Body>
         </div>
