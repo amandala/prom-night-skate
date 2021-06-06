@@ -10,6 +10,7 @@ const Footer = () => {
           className={cx(styles.Link, styles.Cta)}
           href="http://www.portad.ca"
           target="_blank"
+          rel="noreferrer"
         >
           Site made with ♡ by Amanda
         </a>

@@ -22,10 +22,12 @@
   color: white;
   outline: 0;
   font-size: 12px;
+
   &:hover,
   &:focus {
     color: $turbo-yellow;
   }
+
   margin-top: 24px;
 }
 
