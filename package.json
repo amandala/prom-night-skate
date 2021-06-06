@@ -7,7 +7,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "lint": "eslint ./components/** ./pages/** -c .eslintrc.json --ext js,jsx --color",
+    "format": "prettier --write 'components/**/*.{ts,tsx,scss,css,json}' 'pages/**/*.{ts,tsx,scss,css,json}'",
+    "isready": "npm run format && npm run lint && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -21,17 +24,24 @@
     "sass": "^1.26.10"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
+    "@typescript-eslint/eslint-plugin": "4.26.0",
+    "@typescript-eslint/parser": "4.26.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.22.0",
-    "eslint-config-react-app": "^6.0.0",
-    "eslint-plugin-flowtype": "^5.4.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-react-app": "6.0.0",
+    "eslint-import-resolver-typescript": "2.4.0",
+    "eslint-loader": "4.0.2",
+    "eslint-plugin-flowtype": "5.7.2",
+    "eslint-plugin-import": "2.23.4",
     "eslint-plugin-jest": "^24.3.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-testing-library": "^3.10.2"
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-react": "7.24.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-testing-library": "^3.10.2",
+    "prettier": "2.3.1",
+    "prettier-eslint": "12.0.0",
+    "prettier-eslint-cli": "5.0.1"
   }
 }

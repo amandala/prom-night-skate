@@ -2,16 +2,6 @@ import React from "react";
 import { H1, Body } from "../../components/Typography";
 import styles from "./index.module.scss";
 
-const images = [
-  "skate1.png",
-  "skate2.png",
-  "skate3.png",
-  "skate4.png",
-  "skate5.png",
-  "skate6.png",
-  "skate7.png",
-];
-
 const Gallery = () => {
   return (
     <div className={styles.Gallery}>
