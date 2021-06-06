@@ -35,11 +35,22 @@ const Header = ({ pink }) => {
         </div>
       </header>
       <div className={styles.BottomBanner}>
-        <BodyExtraSmall className={styles.BannerText}>100% free</BodyExtraSmall>
-        <BodyExtraSmall className={styles.BannerText}>All ages</BodyExtraSmall>
-        <BodyExtraSmall className={styles.BannerText}>
-          All skill levels
-        </BodyExtraSmall>
+        <div className={styles.BannerContent}>
+          <BodyExtraSmall className={styles.BannerText}>
+            No Experience Necessary
+          </BodyExtraSmall>
+
+          <BodyExtraSmall className={styles.BannerText}>
+            Any Skill Level
+          </BodyExtraSmall>
+          <BodyExtraSmall className={styles.BannerText}>Any Age</BodyExtraSmall>
+          <BodyExtraSmall className={styles.BannerText}>
+            Support and Mentorship
+          </BodyExtraSmall>
+          <BodyExtraSmall className={styles.BannerText}>
+            Completely Free
+          </BodyExtraSmall>
+        </div>
       </div>
     </div>
   );

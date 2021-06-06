@@ -11,9 +11,6 @@ const Home = () => {
       <Header />
       <div className={styles.Main}>
         <Head title="Home" />
-        <div className={styles.Tagline}>
-          <H1 className={styles.Tag}>Empowering girls through boardsports</H1>
-        </div>
         <Gallery />
         <FAQ />
       </div>

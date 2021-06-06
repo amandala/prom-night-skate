@@ -8,9 +8,14 @@ const FAQ = () => {
 
   return (
     <ul className={styles.Wrapper}>
-      <H1 className={styles.Title}>FAQ</H1>
+      <H1 className={styles.Title}>Common Questions</H1>
       <li className={styles.Question}>
-        <button className={styles.Heading} onClick={() => setOpenQ("free")}>
+        <button
+          className={cx(styles.Heading, {
+            [styles.HeadingOpen]: openQ === "free",
+          })}
+          onClick={() => setOpenQ("free")}
+        >
           <Body>Is this seriously free?</Body>
         </button>
         <div
@@ -27,7 +32,12 @@ const FAQ = () => {
         </div>
       </li>
       <li className={styles.Question}>
-        <button className={styles.Heading} onClick={() => setOpenQ("safe")}>
+        <button
+          className={cx(styles.Heading, {
+            [styles.HeadingOpen]: openQ === "safe",
+          })}
+          onClick={() => setOpenQ("safe")}
+        >
           <Body>What do you do for safety?</Body>
         </button>
         <div
@@ -37,14 +47,20 @@ const FAQ = () => {
         >
           <BodySmall>
             We care about safety, big time! We require all girls on the park to
-            wear a helmet. We've got mentors on site to watch for dangerous
-            tricks and teach fundemental skills so the girls feel confident and
-            exercise caution while shredding.
+            wear a helmet and encourage the use of knee/elbow pads and wrist
+            guards. We've got mentors on site to watch for dangerous tricks and
+            teach fundemental skills so the girls feel confident and exercise
+            caution while shredding.
           </BodySmall>
         </div>
       </li>
       <li className={styles.Question}>
-        <button className={styles.Heading} onClick={() => setOpenQ("board")}>
+        <button
+          className={cx(styles.Heading, {
+            [styles.HeadingOpen]: openQ === "board",
+          })}
+          onClick={() => setOpenQ("board")}
+        >
           <Body>What if she doesn't have a skateboard?</Body>
         </button>
         <div
@@ -59,8 +75,13 @@ const FAQ = () => {
         </div>
       </li>
       <li className={styles.Question}>
-        <button className={styles.Heading} onClick={() => setOpenQ("register")}>
-          <Body className={styles.Heading}>How does she register?</Body>
+        <button
+          className={cx(styles.Heading, {
+            [styles.HeadingOpen]: openQ === "register",
+          })}
+          onClick={() => setOpenQ("register")}
+        >
+          <Body>How does she register?</Body>
         </button>
         <div
           className={cx(styles.Answer, {

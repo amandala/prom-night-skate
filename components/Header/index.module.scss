@@ -26,14 +26,24 @@
 .BottomBanner {
   padding: 20px;
   background-color: black;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+}
+
+.BannerContent {
+  display: flex;
+  flex-direction: column;
 }
 
 .BannerText {
   color: white;
   margin-bottom: 0;
   text-align: center;
+  font-size: 14px;
+  letter-spacing: -2%;
+  margin-bottom: 12px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .FreeVans {
@@ -109,5 +119,16 @@
 
   .BottomBanner {
     padding: 30px 0;
+  }
+}
+
+@include breakpoint(large) {
+  .BannerContent {
+    margin: 0 70px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .BannerText {
+    margin-bottom: 0;
   }
 }

@@ -3,20 +3,13 @@ body {
   margin: 0;
 }
 
-@font-face {
-  font-family: "Retroking";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/fonts/Retroking.woff") format("woff");
-}
-
 #mc_embed_signup .button {
   background-color: #c93a29;
   font-size: 26px;
   padding: 10px 15px 6px;
   color: white;
   outline: 0;
-  font-family: "Retroking";
+
   height: unset;
 }
 
