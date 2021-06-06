@@ -33,18 +33,6 @@ const Head = (props) => (
       href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
       rel="stylesheet"
       type="text/css"
-    ></link>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/favicon-32x32.png"
     />
     <link rel="shortcut icon" href="/static/favicon.ico" />
     <link

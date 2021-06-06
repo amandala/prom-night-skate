@@ -1,4 +1,4 @@
-import Head from "../components/Head";
+//import Head from "../components/Head";
 import Header from "../components/Header";
 import Gallery from "../components/Gallery";
 import FAQ from "../components/FAQ";
