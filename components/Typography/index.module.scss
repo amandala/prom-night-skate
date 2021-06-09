@@ -49,7 +49,7 @@
   line-height: 24px;
   margin-bottom: 16px;
   letter-spacing: 1px;
-  font-weight: 100;
+  font-weight: 300;
 
   &:last-child {
     margin-bottom: 0;
@@ -58,7 +58,7 @@
 
 .BodySmall {
   @extend %shared;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 16px;
@@ -69,6 +69,7 @@
   font-size: 14px;
   line-height: 18px;
   color: black;
+  font-weight: 500;
 }
 
 .Meta {
