@@ -46,28 +46,12 @@
   }
 }
 
-.FreeVans {
-  max-width: 80px;
-  transform: rotate(40deg);
-  margin-bottom: -40px;
-
-  &Wrapper {
-    padding: 0 40px 0 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
 .Logo {
-  max-width: 900px;
-  margin-right: 0;
-  margin-bottom: 16px;
-  padding-right: 30px;
+  margin-right: 24px;
 
   &Wrapper {
-    padding: 10px 0px 5px 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
   }
 
   &:hover {
@@ -76,58 +60,63 @@
 }
 
 .DateWrapper {
+  padding: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 24px;
 }
 
 .Time {
-  align-self: center;
-  margin-bottom: 30px;
+  text-align: right;
+  margin-bottom: 20px;
+  font-weight: 300;
 }
 
 .Date {
-  align-self: center;
-  margin-bottom: 10px;
   font-weight: 600;
+}
+
+.EventDesc {
+  text-align: right;
+  font-weight: 300;
+  align-self: flex-end;
+  margin-bottom: 0;
+  max-width: 500px;
+}
+
+.EventName {
+  text-align: right;
+  margin-bottom: 14px;
+  font-size: 40px;
 }
 
 @include breakpoint(medium) {
   .Header {
-    padding: 40px 0;
+    padding: 60px 0;
+  }
+
+  .Logo {
+    padding: 24px 0;
   }
 
   .NavLink {
     font-size: 22px;
   }
 
-  .DateWrapper {
-    margin-right: 70px;
-  }
-
-  .FreeVans {
-    max-width: 150px;
-    margin-bottom: -80px;
-
-    &Wrapper {
-      padding: 0 60px 0 0;
-    }
-  }
-
-  .Logo {
-    margin-bottom: 50px;
-  }
-
   .BottomBanner {
     padding: 30px 0;
   }
 
-  .Time,
-  .Date {
-    align-self: flex-end;
+  .EventName {
+    margin-bottom: 24px;
   }
 }
 
 @include breakpoint(large) {
+  .Header {
+    padding: 80px 0;
+  }
   .BannerContent {
     margin: 0 70px;
     display: grid;
@@ -135,5 +124,29 @@
   }
   .BannerText {
     margin-bottom: 0;
+  }
+
+  .EventDesc {
+    max-width: 500px;
+  }
+
+  .LogoWrapper {
+    display: grid;
+    grid-template-columns: 500px auto;
+  }
+
+  .DateWrapper {
+    padding: 0;
+    margin-right: 70px;
+  }
+}
+
+@include breakpoint(xlarge) {
+  .Header {
+    padding: 120px 0;
+  }
+
+  .LogoWrapper {
+    grid-template-columns: auto 700px;
   }
 }

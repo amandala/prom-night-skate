@@ -1,20 +1,15 @@
 import React from "react";
-import { H3, BodyExtraSmall } from "../Typography";
+import { H3, H1, BodyExtraSmall, BodySmall } from "../Typography";
 import Link from "next/link";
+import moment from "moment";
 import styles from "./index.module.scss";
 
-const Header = ({ pink }) => {
+const Header = ({ event }) => {
+  console.log("EVENT", event);
   return (
     <div>
       <header className={styles.Header}>
         <div className={styles.HeaderContent}>
-          <div className={styles.FreeVansWrapper}>
-            <img
-              className={styles.FreeVans}
-              src="/freeVans.svg"
-              alt="Giving away a free pair of Vans"
-            />
-          </div>
           <div className={styles.LogoWrapper}>
             <Link href="/">
               <img
@@ -24,12 +19,18 @@ const Header = ({ pink }) => {
               />
             </Link>
             <div className={styles.DateWrapper}>
-              <H3 className={styles.Date}>
-                Every Tuesday &bull; June - September
-              </H3>
-              <H3 className={styles.Time}>
-                6:30pm - 8:30pm @ Cochrane Skate Park{" "}
-              </H3>
+              <div>
+                <H3 className={styles.Time}>
+                  Next Event:{" "}
+                  <span className={styles.Date}>
+                    {moment(event.date).format("MMM Do @ h:mm a")}
+                  </span>
+                </H3>
+                <H1 className={styles.EventName}>{event.title}</H1>
+                <BodySmall className={styles.EventDesc}>
+                  {event.description}
+                </BodySmall>
+              </div>
             </div>
           </div>
         </div>

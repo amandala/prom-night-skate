@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.6",
+    "moment": "^2.29.1",
     "next": "^10.0.9",
     "prismic-javascript": "^3.0.2",
     "react": "^16.13.1",
