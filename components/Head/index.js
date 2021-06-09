@@ -21,19 +21,6 @@ const Head = (props) => (
       rel="stylesheet"
     ></link>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900;100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
-      rel="stylesheet"
-      type="text/css"
-    />
     <link rel="shortcut icon" href="/static/favicon.ico" />
     <link
       rel="apple-touch-icon"

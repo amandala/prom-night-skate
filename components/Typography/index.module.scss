@@ -3,7 +3,7 @@
 %shared {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: $work-sans;
 }
 
 .H1 {
@@ -11,7 +11,7 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  font-family: "Work Sans", sans-serif;
+  font-family: $work-sans;
 }
 
 .H2 {
@@ -50,7 +50,6 @@
   margin-bottom: 16px;
   letter-spacing: 1px;
   font-weight: 100;
-  font-family: "Work Sans", sans-serif;
 
   &:last-child {
     margin-bottom: 0;
