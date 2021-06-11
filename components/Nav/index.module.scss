@@ -44,7 +44,7 @@
   }
 }
 
-@include breakpoint(medium) {
+@include breakpoint(large) {
   .Items {
     flex-direction: row;
   }
