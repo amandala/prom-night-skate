@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+.Wrapper {
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Items {
+  padding: 30px 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Link {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.Item {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: $work-sans;
+  font-weight: 600;
+
+  &:hover {
+    color: #ff8e50;
+    cursor: $skate-cursor;
+  }
+
+  &:focus {
+    color: #ffb84f;
+    outline: none;
+    border-bottom: 1px solid #ff8e50;
+  }
+}
+
+@include breakpoint(medium) {
+  .Items {
+    flex-direction: row;
+  }
+
+  .Link {
+    margin-bottom: 0;
+    margin-right: 50px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

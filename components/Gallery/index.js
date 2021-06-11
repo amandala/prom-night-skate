@@ -7,11 +7,11 @@ const Gallery = () => {
     <div className={styles.Gallery}>
       <div className={styles.Row1}>
         <div className={styles.StartSomewhere}>
-          <H1 className={styles.Heading}>Everyone has to start somewhere</H1>
+          <H1 className={styles.Heading}>Every girl has to start somewhere</H1>
           <Body className={styles.About}>
-            We're here to help get you on your board for the first time, drop
-            in, or just learn some fundamentals. We want to help girls advance
-            their skills safely by setting up a fun and supportive envirornment.
+            We are here to empower girls of all ages, through board sports and
+            community. We want to help girls advance their skills authentically
+            and safely by setting up a fun and encouraging environment.
           </Body>
         </div>
         <img

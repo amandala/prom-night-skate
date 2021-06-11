@@ -15,7 +15,7 @@
   margin-bottom: 10px;
 
   &:hover {
-    cursor: pointer;
+    cursor: $skate-cursor;
   }
 }
 
@@ -28,7 +28,7 @@
   margin-bottom: 10px;
 
   &:hover {
-    cursor: pointer;
+    cursor: $skate-cursor;
   }
 }
 
@@ -46,6 +46,10 @@
     height: auto;
     opacity: 1;
   }
+
+  &:hover {
+    cursor: $skate-cursor;
+  }
 }
 
 @include breakpoint(medium) {
@@ -55,6 +59,6 @@
 
   .Wrapper {
     max-width: 700px;
-    margin: 0 auto 70px;
+    margin: 0 auto 120px;
   }
 }

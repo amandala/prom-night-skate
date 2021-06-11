@@ -23,31 +23,8 @@
   font-size: 16px;
 }
 
-.BottomBanner {
-  padding: 30px;
-  background-color: black;
-}
-
-.BannerContent {
-  display: flex;
-  flex-direction: column;
-}
-
-.BannerText {
-  color: white;
-  margin-bottom: 0;
-  text-align: center;
-  font-size: 14px;
-  letter-spacing: -2%;
-  margin-bottom: 12px;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
 .Logo {
-  margin-right: 24px;
+  margin-right: 40px;
 
   &Wrapper {
     display: grid;
@@ -88,7 +65,7 @@
 .EventName {
   text-align: right;
   margin-bottom: 14px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 @include breakpoint(medium) {
@@ -110,20 +87,13 @@
 
   .EventName {
     margin-bottom: 24px;
+    font-size: 40px;
   }
 }
 
 @include breakpoint(large) {
   .Header {
     padding: 80px 0;
-  }
-  .BannerContent {
-    margin: 0 70px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .BannerText {
-    margin-bottom: 0;
   }
 
   .EventDesc {
@@ -147,6 +117,6 @@
   }
 
   .LogoWrapper {
-    grid-template-columns: auto 700px;
+    grid-template-columns: auto 600px;
   }
 }

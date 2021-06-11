@@ -2,6 +2,8 @@ import Header from "../components/Header";
 //import Prismic from "prismic-javascript";
 import Gallery from "../components/Gallery";
 import FAQ from "../components/FAQ";
+import Perks from "../components/Perks";
+import Nav from "../components/Nav";
 import { Client } from "../prismic-configuration.js";
 
 const Home = ({ home }) => {
@@ -16,7 +18,9 @@ const Home = ({ home }) => {
             description: home.data.event_description[0].text,
           }}
         />
+        <Nav />
         <Gallery />
+        <Perks />
         <FAQ />
       </div>
     </div>

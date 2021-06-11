@@ -1,11 +1,10 @@
 import React from "react";
-import { H3, H1, BodyExtraSmall, BodySmall } from "../Typography";
+import { H3, H1, BodyExtraSmall } from "../Typography";
 import Link from "next/link";
 import moment from "moment";
 import styles from "./index.module.scss";
 
 const Header = ({ event }) => {
-  console.log("EVENT", event);
   return (
     <div>
       <header className={styles.Header}>
@@ -27,32 +26,14 @@ const Header = ({ event }) => {
                   </span>
                 </H3>
                 <H1 className={styles.EventName}>{event.title}</H1>
-                <BodySmall className={styles.EventDesc}>
+                <BodyExtraSmall className={styles.EventDesc}>
                   {event.description}
-                </BodySmall>
+                </BodyExtraSmall>
               </div>
             </div>
           </div>
         </div>
       </header>
-      <div className={styles.BottomBanner}>
-        <div className={styles.BannerContent}>
-          <BodyExtraSmall className={styles.BannerText}>
-            No Experience Necessary
-          </BodyExtraSmall>
-
-          <BodyExtraSmall className={styles.BannerText}>
-            Any Skill Level
-          </BodyExtraSmall>
-          <BodyExtraSmall className={styles.BannerText}>Any Age</BodyExtraSmall>
-          <BodyExtraSmall className={styles.BannerText}>
-            Support and Mentorship
-          </BodyExtraSmall>
-          <BodyExtraSmall className={styles.BannerText}>
-            Completely Free
-          </BodyExtraSmall>
-        </div>
-      </div>
     </div>
   );
 };
