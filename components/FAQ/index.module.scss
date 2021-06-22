@@ -13,15 +13,22 @@
   border: none;
   padding: 0;
   margin-bottom: 10px;
+  
 
   &:hover {
     cursor: $skate-cursor;
   }
 }
 
+.QuestionText {
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .Title {
   text-align: center;
   margin-bottom: 24px;
+  font-size: 26px;;
 }
 
 .Question {
@@ -39,7 +46,7 @@
   transition: opacity 0.5s 0.5s ease-in-out;
   text-align: center;
 
-  font-weight: 300;
+  font-weight: 500;
 
   &Open {
     display: block;
@@ -60,5 +67,9 @@
   .Wrapper {
     max-width: 700px;
     margin: 0 auto 120px;
+  }
+
+  .QuestionText {
+    font-size: 20px;
   }
 }

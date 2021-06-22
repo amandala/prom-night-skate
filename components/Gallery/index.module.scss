@@ -47,6 +47,10 @@
   }
 }
 
+.ImageWrapper {
+  margin-bottom: 20px;
+}
+
 @include breakpoint(large) {
   .Gallery {
     margin: 120px auto;

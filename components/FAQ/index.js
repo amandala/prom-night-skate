@@ -16,7 +16,7 @@ const FAQ = () => {
           })}
           onClick={() => setOpenQ("free")}
         >
-          <Body>Is this seriously free?</Body>
+          <Body className={styles.QuestionText}>Is this seriously free?</Body>
         </button>
         <div
           className={cx(styles.Answer, {
@@ -38,7 +38,7 @@ const FAQ = () => {
           })}
           onClick={() => setOpenQ("safe")}
         >
-          <Body>What do you do for safety?</Body>
+          <Body className={styles.QuestionText}>What do you do for safety?</Body>
         </button>
         <div
           className={cx(styles.Answer, {
@@ -61,7 +61,7 @@ const FAQ = () => {
           })}
           onClick={() => setOpenQ("board")}
         >
-          <Body>What if she doesn't have a skateboard?</Body>
+          <Body className={styles.QuestionText}>What if she doesn't have a skateboard?</Body>
         </button>
         <div
           className={cx(styles.Answer, {
@@ -81,7 +81,7 @@ const FAQ = () => {
           })}
           onClick={() => setOpenQ("register")}
         >
-          <Body>How does she register?</Body>
+          <Body className={styles.QuestionText}>How does she register?</Body>
         </button>
         <div
           className={cx(styles.Answer, {

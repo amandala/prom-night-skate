@@ -14,30 +14,39 @@ const Gallery = () => {
             and safely by setting up a fun and encouraging environment.
           </Body>
         </div>
+        <div className={styles.ImageWrapper}>
+          <img
+            className={styles.Image}
+            src={`/photos/kayls.jpg`}
+            key="sk1"
+            alt="Organizer Kayleigh"
+          />
+        </div>
         <img
           className={styles.Image}
-          src={`/photos/kayls.jpg`}
+          src={`/photos/coolkids.jpg`}
           key="sk1"
           alt="Organizer Kayleigh"
         />
+        
       </div>
       <div className={styles.Row2}>
         <img
           className={styles.Image}
-          src={`/photos/droppinin.jpg`}
+          src={`/photos/kickflip.jpg`}
           key="sk1"
           alt="Girl dropping into the bowl"
         />
         <div className={styles.InnerGrid}>
           <img
             className={styles.Image}
-            src={`/photos/pizzasmile.jpg`}
+            src={`/photos/contemplate.jpg`}
             key="sk1"
             alt="GOrl eating Pizza"
           />
           <img
             className={styles.Image}
-            src={`/photos/contemplatethedrop.jpg`}
+            src={`/photos/trio.jpg`}
             key="sk1"
             alt="Girl looking down into bowl ready to drop"
           />
@@ -53,27 +62,27 @@ const Gallery = () => {
       <div className={styles.Row3}>
         <img
           className={styles.Image}
-          src={`/photos/promgirls.jpg`}
+          src={`/photos/group.jpg`}
           key="sk1"
           alt="Group of Prom Girls"
         />
         <div className={styles.InnerGrid}>
           <img
             className={styles.Image}
-            src={`/photos/samstheman.jpg`}
+            src={`/photos/droppingin.jpg`}
             key="sk1"
             alt="Shred's Sam Helping"
           />
           <img
             className={styles.Image}
-            src={`/photos/promqueen.jpg`}
+            src={`/photos/hugs.jpg`}
             key="sk1"
             alt="Prom Queen Vans winner"
           />
         </div>
         <img
           className={styles.Image}
-          src={`/photos/allsmiles.jpg`}
+          src={`/photos/arttime.jpg`}
           key="sk1"
           alt="Kayleigh and the crew"
         />

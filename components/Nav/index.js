@@ -11,26 +11,19 @@ const Nav = () => {
             <a className={styles.Item}>Updates</a>
           </Link>
         </li>
-        <li className={styles.Link}>
+        {/* <li className={styles.Link}>
           <Link href="/">
             <a className={styles.Item}> About Us</a>
           </Link>
-        </li>
+        </li> */}
         <li className={styles.Link}>
-          <Link href="/">
-            <a className={styles.Item}>Skate Camps</a>
-          </Link>
+            <a href="https://shop.shredzshop.com/shredz-skateboard-camp-2021.html" className={styles.Item} target="_blank">Skate Camps</a>
         </li>
-        <li className={styles.Link}>
+        {/* <li className={styles.Link}>
           <Link href="/">
             <a className={styles.Item}>Our Friends</a>
           </Link>
-        </li>
-        <li className={styles.Link}>
-          <Link href="/">
-            <a className={styles.Item}>Donate</a>
-          </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
