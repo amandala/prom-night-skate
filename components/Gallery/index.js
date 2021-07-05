@@ -24,9 +24,9 @@ const Gallery = () => {
         </div>
         <img
           className={styles.Image}
-          src={`/photos/coolkids.jpg`}
+          src={`/photos/koolkidz.jpg`}
           key="sk1"
-          alt="Organizer Kayleigh"
+          alt="Three skate girls"
         />
         
       </div>
@@ -35,20 +35,20 @@ const Gallery = () => {
           className={styles.Image}
           src={`/photos/kickflip.jpg`}
           key="sk1"
-          alt="Girl dropping into the bowl"
+          alt="Girl doing a kickflip"
         />
         <div className={styles.InnerGrid}>
           <img
             className={styles.Image}
             src={`/photos/contemplate.jpg`}
             key="sk1"
-            alt="GOrl eating Pizza"
+            alt="Girl contemplating her skateboard"
           />
           <img
             className={styles.Image}
             src={`/photos/trio.jpg`}
             key="sk1"
-            alt="Girl looking down into bowl ready to drop"
+            alt="Kayleigh and two girls smiling"
           />
         </div>
         <div className={styles.PizzaNPop}>
@@ -71,20 +71,20 @@ const Gallery = () => {
             className={styles.Image}
             src={`/photos/droppingin.jpg`}
             key="sk1"
-            alt="Shred's Sam Helping"
+            alt="Mentor helping a girl drop in"
           />
           <img
             className={styles.Image}
             src={`/photos/hugs.jpg`}
             key="sk1"
-            alt="Prom Queen Vans winner"
+            alt="Girls hugging"
           />
         </div>
         <img
           className={styles.Image}
           src={`/photos/arttime.jpg`}
           key="sk1"
-          alt="Kayleigh and the crew"
+          alt="Mentor painting a skateboard"
         />
       </div>
     </div>

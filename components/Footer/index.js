@@ -8,11 +8,11 @@ const Footer = () => {
       <div className={styles.Links}>
         <a
           className={cx(styles.Link, styles.Cta)}
-          href="http://www.portad.ca"
+          href="https://linktr.ee/mixedmanifest"
           target="_blank"
           rel="noreferrer"
         >
-          Site made with ♡ by Amanda
+          Site made with ♡ by Mixed Manifest
         </a>
       </div>
     </div>

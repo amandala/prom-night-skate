@@ -7,7 +7,7 @@ import Nav from "../components/Nav";
 import { Client } from "../prismic-configuration.js";
 
 const Home = ({ home }) => {
-  console.log(home);
+
   return (
     <div>
       <div>

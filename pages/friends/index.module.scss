@@ -1,0 +1,95 @@
+@import "../../styles/variables";
+
+.Header {
+  background-color: $turbo-yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+
+  &Content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.Logo {
+  max-height: 191px;
+  margin-bottom: 80px;;
+}
+
+.Content {
+  margin: 60px 24px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid $turbo-yellow;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+.Title {
+  margin-bottom: 20px;
+}
+
+.Image {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+
+  &Wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.Friend {
+
+  
+  border: 2px solid #f0f0f0;
+  padding: 20px;
+
+  &:hover, &:focus {
+    border: 2px solid $turbo-yellow;
+    outline: 0;
+  }
+
+  &Wrapper {
+    color: black;
+    text-decoration: none;
+    cursor: $skate-cursor;
+
+    
+    
+  }
+
+  
+}
+
+@include breakpoint(large){
+  .Update {
+    display: flex;
+    
+  }
+
+  .Content {
+    margin: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+
+  .Image {
+    margin-top: 0;
+    margin-left: 0;
+
+    &Wrapper {
+      justify-content: flex-start;
+    }
+  }
+
+}
