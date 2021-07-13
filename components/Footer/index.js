@@ -17,7 +17,7 @@ const Footer = () => {
         </div> */}
         <div className={styles.Section}>
           <H1 className={styles.Header}>Reconciliation</H1>
-          <BodyExtraSmall className={styles.Text}>Prom Night Skate acknowledges the lands we gather and skate on are the traditional unceeded territories of Treaty 7 Nations including the Blackfoot Confederacy (the Siksika, Pikani, and Kainai First Nations), the Tsuut'ina and Stoney Nakoda First Nations (Chikini, Bearspaw and Wesley Bands) and the Métis Nation of Alberta (Region 3) and all who today call Moh'kins'tsis home.</BodyExtraSmall>
+          <BodyExtraSmall light className={styles.Text}>Prom Night Skate acknowledges the lands we gather and skate on are the traditional unceeded territories of Treaty 7 Nations including the Blackfoot Confederacy (the Siksika, Pikani, and Kainai First Nations), the Tsuut'ina and Stoney Nakoda First Nations (Chikini, Bearspaw and Wesley Bands) and the Métis Nation of Alberta (Region 3) and all who today call Moh'kins'tsis home.</BodyExtraSmall>
         </div>
       </div>
       <div className={styles.Links}>

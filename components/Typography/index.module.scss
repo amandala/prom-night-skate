@@ -80,6 +80,10 @@
   text-transform: uppercase;
 }
 
+.Light {
+  color: white;
+}
+
 @include breakpoint(medium) {
   .H2 {
     font-size: 24px;

@@ -35,8 +35,11 @@ export const BodySmall = ({ children, className }) => (
   <p className={cx(styles.BodySmall, className)}>{children}</p>
 );
 
-export const BodyExtraSmall = ({ children, className }) => (
-  <p className={cx(styles.BodyExtraSmall, className)}>{children}</p>
+export const BodyExtraSmall = ({ children, className, light }) => (
+  <p 
+  className={cx(styles.BodyExtraSmall, className, { [styles.Light]: light })}>
+    {children}
+  </p>
 );
 
 export const Meta = ({ children, className }) => (

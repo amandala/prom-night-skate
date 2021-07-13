@@ -10,7 +10,7 @@
 
 .Header {
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .Text {
@@ -73,13 +73,21 @@
   border-bottom: 1px solid white;
 }
 
+.Section {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-gap:20px;
+}
+
 @include breakpoint(large) {
   .Link {
     margin-top: 20px;
   }
 
   .Section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-gap: 24px;
   }
 
   .Header {
@@ -88,5 +96,9 @@
 
   .Wrapper {
     padding: 60px 45px;;
+  }
+
+  .Text {
+    color: white;
   }
 }
