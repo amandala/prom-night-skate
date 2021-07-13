@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-//import Prismic from "prismic-javascript";
 import Gallery from "../components/Gallery";
 import FAQ from "../components/FAQ";
 import Perks from "../components/Perks";
