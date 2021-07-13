@@ -19,7 +19,7 @@
 .Logo {
   margin-bottom: 80px;
   width: 100%;
-  max-width: 500px;
+  max-width: 70%;
 }
 
 .Content {
@@ -88,6 +88,10 @@
     &Wrapper {
       justify-content: flex-start;
     }
+  }
+
+  .Logo {
+    max-width: 500px;
   }
 
 }

@@ -19,7 +19,7 @@
 .Logo {
   margin-bottom: 80px;
   width: 100%;
-  max-width: 500px;
+  max-width: 70%
 }
 
 .Link {
@@ -76,5 +76,9 @@
 
   .Info {
     max-width: 60%;
+  }
+
+  .Logo {
+    max-width: 500px;
   }
 }
