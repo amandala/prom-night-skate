@@ -29,7 +29,7 @@ const Home = ({ updates }) => {
                   <BodyExtraSmall className={styles.Title}>{moment(update.last_publication_date).format("MMM Do @ h:mm a")}
 </BodyExtraSmall>
                 </div>
-                <a className={styles.Link} href={update.data.link.url} target="_blank" rel="noreferrer">{update.data.link.url}</a>
+                <a className={styles.Link} href={update.data.link.url} target="_blank" rel="noreferrer">{update.data.link_display_text}</a>
                 <div className={styles.Update}>
                   <div className={styles.Info}>
                   {update.data.info.map(detail => (
