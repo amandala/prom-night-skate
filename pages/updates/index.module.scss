@@ -21,6 +21,21 @@
   margin-bottom: 80px;;
 }
 
+.Link {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: $work-sans;
+  display: block;
+  margin-bottom: 20px;
+
+  &:hover {
+    cursor: $skate-cursor;
+    color: $flaming-orange;
+  }
+
+}
+
 .Content {
   margin: 60px 24px;
   padding-bottom: 40px;
@@ -36,14 +51,10 @@
 }
 
 .Image {
-  width: 100%;
-  max-width: 400px;
-  margin-top: 20px;
+  //width: 100%;
   
-  &Wrapper {
-    display: flex;
-    justify-content: center;
-  }
+  margin-top: 20px;
+  margin-right: 45px;
 }
 
 @include breakpoint(large){

@@ -4,12 +4,14 @@ import Gallery from "../components/Gallery";
 import FAQ from "../components/FAQ";
 import Perks from "../components/Perks";
 import Nav from "../components/Nav";
+import Head from '../components/Head';
 import { Client } from "../prismic-configuration.js";
 
 const Home = ({ home }) => {
 
   return (
     <div>
+      <Head title="Prom Night Girls Home" />
       <div>
         <Header
           event={{

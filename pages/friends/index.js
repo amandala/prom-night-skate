@@ -1,8 +1,8 @@
 
 import Prismic from "prismic-javascript";
 import Nav from "../../components/Nav";
-import { H1, Body, BodyExtraSmall } from "../../components/Typography";
-import Link from 'next/link';
+import { H1, Body } from "../../components/Typography";
+import Head from '../../components/Head';
 import { Client } from "../../prismic-configuration.js";
 import styles from './index.module.scss';
 
@@ -12,6 +12,7 @@ const Friends = ({ friends }) => {
 
   return (
     <div>
+      <Head title="Prom Night Friends" />
       <div className={styles.Header}>
         <div className={styles.HeaderContent}>
           <img className={styles.Logo} src="/promnightfriends.svg" alt="Prom Night Updates"/>

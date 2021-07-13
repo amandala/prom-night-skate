@@ -89,9 +89,7 @@ const FAQ = () => {
           })}
         >
           <BodySmall>
-            In order to keep accurate records and remain compliant with current
-            AHS guidelines, we require all Prom Night attendees to register for
-            the season. Click the link below to sign up for 2021!
+           Prom Nigt Skate is a casual drop-in event and we don't currently require registration to attend. Come on down to the Cochrane Skate Park on Tuesday nights to join in on the fun!
           </BodySmall>
         </div>
       </li>

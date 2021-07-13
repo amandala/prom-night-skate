@@ -49,21 +49,18 @@
 .Friend {
 
   
-  border: 2px solid #f0f0f0;
+  border: 5px solid black;
   padding: 20px;
 
   &:hover, &:focus {
-    border: 2px solid $turbo-yellow;
+    border: 5px solid $turbo-yellow;
     outline: 0;
   }
 
   &Wrapper {
     color: black;
     text-decoration: none;
-    cursor: $skate-cursor;
-
-    
-    
+    cursor: $skate-cursor;    
   }
 
   
@@ -79,7 +76,7 @@
     margin: 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 40px;
   }
 
 
